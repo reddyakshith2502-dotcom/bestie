@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A special, interactive tribute to celebrate Happy Best Friends Day! Responsive, elegant, and modern design.">
+  <title>Happy Best Friends Day! 🌟</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Background Mesh Blobs -->
+  <div class="bg-blobs-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Floating Canvas for Confetti & Mouse Trail -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <span>BESTIE</span><span class="logo-dot">.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#timeline">Our Journey</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#why-bestie">Why You?</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+        <li><a href="#letter">A Letter</a></li>
+      </ul>
+      <div class="burger-menu" id="burger-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#timeline" class="mobile-link">Our Journey</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#why-bestie" class="mobile-link text-nowrap">Why You?</a></li>
+      <li><a href="#trivia" class="mobile-link">Trivia</a></li>
+      <li><a href="#letter" class="mobile-link">A Letter</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">Happy Best Friends Day! 🌟</div>
+        <h1 class="hero-title">To My <span class="highlight">#1 Bestie</span> & Partner-in-Crime</h1>
+        <p class="hero-subtitle">
+          Here's to the late-night roastings, the shared programming bugs, the coding advice, and the constant support. You're my first girl best friend, and this page is a celebration of our awesome friendship!
+        </p>
+        <div class="hero-buttons">
+          <a href="#timeline" class="btn btn-primary">Our Journey <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#letter" class="btn btn-secondary">Open Letter <i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_friends.jpg" alt="Best friends laughing" class="hero-image">
+          <div class="hero-image-decoration dec-1"><i class="fa-solid fa-code"></i></div>
+          <div class="hero-image-decoration dec-2"><i class="fa-solid fa-message"></i></div>
+          <div class="hero-image-decoration dec-3"><i class="fa-solid fa-star"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Journey Timeline Section -->
+    <section id="timeline" class="timeline-section section-padding">
+      <div class="section-header">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">How We Got Here</h2>
+        <p class="section-subtitle">A quick, fun look back at the chapters of our friendship.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">Phase 1: The Initial Meet</span>
+            <h3>How It Started</h3>
+            <p>From formal introductions and polite "hi" messages to eventually talking about anything and everything. It didn't take long for us to realize we shared the same wavelength and humor.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right reveal-on-scroll">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-face-laugh-squint"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">Phase 2: Inside Jokes & Memes</span>
+            <h3>The Sarcasm & Roastings</h3>
+            <p>Once the formal barriers broke, the endless roasts and meme sharing began. Our chats turned into a treasure chest of teasing, inside jokes, and mutual roasting sessions that keep things lively.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">Phase 3: The Support System</span>
+            <h3>Always Got My Back</h3>
+            <p>Beyond the jokes, you've been a reliable sounding board. Whether listening to random life rants, career brainstorms, or sharing genuine advice, you've proven to be a true, dependable friend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Polaroid Gallery Section -->
+    <section id="gallery" class="gallery-section section-padding">
+      <div class="section-header">
+        <span class="section-tag">Visuals</span>
+        <h2 class="section-title">Memory Board</h2>
+        <p class="section-subtitle">Snapshot highlights of our bond (feel free to swap in our real photos!).</p>
+      </div>
+
+      <div class="polaroid-grid">
+        <!-- Polaroid 1 -->
+        <div class="polaroid-card tilt-left reveal-on-scroll" onclick="openLightbox(0)">
+          <div class="polaroid-image-wrapper">
+            <img src="assets/memory_polaroid_1.jpg" alt="Coffee and chats memory">
+          </div>
+          <div class="polaroid-caption">
+            <p>Coffee & Code Chats ☕</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <div class="polaroid-card tilt-right reveal-on-scroll" onclick="openLightbox(1)">
+          <div class="polaroid-image-wrapper">
+            <img src="assets/memory_polaroid_2.jpg" alt="Walking at sunset memory">
+          </div>
+          <div class="polaroid-caption">
+            <p>Exploring Life's Paths 🌅</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="polaroid-card tilt-left reveal-on-scroll" onclick="openLightbox(2)">
+          <div class="polaroid-image-wrapper">
+            <img src="assets/memory_polaroid_3.jpg" alt="Joyful celebration memory">
+          </div>
+          <div class="polaroid-caption">
+            <p>Celebrating the Wins ✨</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery photo">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Why You're My Bestie Section -->
+    <section id="why-bestie" class="why-section section-padding">
+      <div class="section-header">
+        <span class="section-tag">Appreciation</span>
+        <h2 class="section-title">Why You're the Best</h2>
+        <p class="section-subtitle">Hover or tap on the cards below to see what makes our friendship awesome.</p>
+      </div>
+
+      <div class="flip-cards-grid">
+        <!-- Card 1 -->
+        <div class="flip-card reveal-on-scroll">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-icon"><i class="fa-solid fa-ear-listening"></i></div>
+              <h3>The Listener</h3>
+              <p>Hover to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Always Listening</h3>
+              <p>No matter how long my coding rants, career doubts, or random thoughts are, you're always ready to listen and share realistic, balanced advice.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card reveal-on-scroll">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-icon"><i class="fa-solid fa-icons"></i></div>
+              <h3>Meme & Sarcasm Partner</h3>
+              <p>Hover to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Humor Matches</h3>
+              <p>We speak the language of sarcasm fluently. Our chat history is filled with quality banters, silly reels, and inside jokes that crack me up every single day.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card reveal-on-scroll">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>Real & Authentic</h3>
+              <p>Hover to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Zero Drama</h3>
+              <p>No fake politeness or walking on eggshells. You tell it like it is, keep me grounded, and offer genuine support without any pretentiousness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trivia Quiz Section -->
+    <section id="trivia" class="trivia-section section-padding">
+      <div class="section-header">
+        <span class="section-tag">Interactive</span>
+        <h2 class="section-title">The Bestie Trivia</h2>
+        <p class="section-subtitle">Let's see how aligned we are! Take this quick 3-question quiz.</p>
+      </div>
+
+      <div class="quiz-wrapper reveal-on-scroll">
+        <div class="quiz-card" id="quiz-card">
+          <!-- Progress bar -->
+          <div class="quiz-progress-container">
+            <div class="quiz-progress-bar" id="quiz-progress" style="width: 33%"></div>
+          </div>
+          
+          <!-- Question Container -->
+          <div class="quiz-question-container">
+            <h3 id="quiz-question">Question loading...</h3>
+            <div class="quiz-options" id="quiz-options">
+              <!-- Options generated by JS -->
+            </div>
+          </div>
+
+          <!-- Bottom controls -->
+          <div class="quiz-controls">
+            <span class="quiz-step-count" id="quiz-step-count">Question 1 of 3</span>
+            <button class="btn btn-primary" id="quiz-next-btn" style="display: none;">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Result Screen (Hidden initially) -->
+        <div class="quiz-result-card" id="quiz-result-card" style="display: none;">
+          <div class="result-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h2>Quiz Completed!</h2>
+          <p class="result-percentage">100% Bestie Compatibility Score</p>
+          <p class="result-text">We speak sarcasm fluently and support each other perfectly. This friendship contract is officially locked in forever!</p>
+          <button class="btn btn-primary" onclick="restartQuiz()">Try Again <i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- A Special Letter Envelope Section -->
+    <section id="letter" class="letter-section section-padding">
+      <div class="section-header">
+        <span class="section-tag">For You</span>
+        <h2 class="section-title">A Special Letter</h2>
+        <p class="section-subtitle">Click on the wax seal below to open the envelope and read the message.</p>
+      </div>
+
+      <div class="envelope-wrapper reveal-on-scroll">
+        <div class="envelope-container" id="envelope-container">
+          <div class="envelope">
+            <div class="flap"></div>
+            <div class="pocket"></div>
+            <!-- Letter sliding out -->
+            <div class="letter" id="letter-content">
+              <div class="letter-inner">
+                <span class="letter-date">June 8, 2026</span>
+                <h3>Happy Best Friends Day!</h3>
+                <p>Hey Bestie,</p>
+                <p>
+                  I wanted to create something unique to celebrate this day, so I coded this website for you! 
+                </p>
+                <p>
+                  Since you became my first girl best friend, things have been awesome. I really appreciate how you balance jokes and serious talks, how you're always down to listen, and how honest you are. In a world full of temporary friendships, having someone who understands my humor and is genuinely supportive is priceless.
+                </p>
+                <p>
+                  I hope this page brings a smile to your face. Let's keep making cool memories, roasting each other, and supporting our goals!
+                </p>
+                <p class="letter-sign-off">Cheers,<br>Your Bestie</p>
+              </div>
+            </div>
+            <!-- Wax Seal that triggers opening -->
+            <div class="wax-seal-btn" id="wax-seal" onclick="openEnvelope()">
+              <div class="seal-inner">
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Music/Ambiance Widget -->
+  <div class="music-widget" id="music-widget">
+    <button class="music-toggle-btn" id="music-toggle" aria-label="Toggle music control">
+      <i class="fa-solid fa-music"></i>
+    </button>
+    <div class="music-player-panel" id="music-panel">
+      <p class="song-title">Ambient Lo-Fi Vibes</p>
+      <p class="song-artist">Bestie Radio 📻</p>
+      <div class="player-controls">
+        <button id="player-prev" class="player-btn"><i class="fa-solid fa-backward"></i></button>
+        <button id="player-play" class="player-btn play-btn"><i class="fa-solid fa-play"></i></button>
+        <button id="player-next" class="player-btn"><i class="fa-solid fa-forward"></i></button>
+      </div>
+      <!-- Hidden audio tag for optional real music if they drop a track in assets -->
+      <audio id="bg-audio" loop>
+        <source src="assets/ambient_lofi.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with <span class="footer-heart"><i class="fa-solid fa-code"></i></span> & <span class="footer-heart"><i class="fa-solid fa-heart"></i></span> for Happy Best Friends Day.</p>
+    <p class="footer-copyright">&copy; 2026. All rights reserved. Code and friendship verified. 🤝</p>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
